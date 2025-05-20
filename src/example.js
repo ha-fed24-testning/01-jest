@@ -1,6 +1,8 @@
 
 // Funktion som returnerar x+1
 function nextNumber(x) {
+	if( typeof x !== 'number' )
+		return false
 	return x + 1
 }
 
