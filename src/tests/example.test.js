@@ -1,3 +1,4 @@
+import { nextNumber } from "../example.js"
 
 test('när man anropar funktionen med ett tal returnerar den talet plus 1', () => {
 	// Arrange
