@@ -1,11 +1,11 @@
-// Övning 2.2
-// En funktion som returnerar tre gånger input.
-// function triple(x) {}
+/*
+Övning 2.2
+En funktion som returnerar tre gånger input.
+function triple(x) {}
 
 // let result = triple(2)
 // console.log(result)  // 6
 
-/*
 Först ställer vi upp acceptanskriterier (AK) för funktionen, så att vi vet vad som ska testas.
 
 A1. Om man skickar in ett tal x ska funktionen returnera 3*x
@@ -15,3 +15,14 @@ A2. Annars ska funktionen returnera false
 Nu skriver vi testfall för varje AK - i utils.test.js
 */
 
+/*
+Övning 2.3a
+En funktion som slår ihop två strängar.
+// Exempel: combineWords('anka', 'kod') === 'anka, kod'
+function combineWords(a, b) {}
+
+AK:
+A1. om a inte är en sträng, returnera false
+A2. om b inte är en sträng, returnera false
+A3. slå ihop två strängar och returnera resultatet
+*/
