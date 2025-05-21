@@ -13,4 +13,9 @@ function subtract(x, y) {
 	return 'x måste vara ett tal'
 }
 
-export { subtract }
+// Övning 2.2
+function triple(x) {
+	return x * 3
+}
+
+export { subtract, triple }

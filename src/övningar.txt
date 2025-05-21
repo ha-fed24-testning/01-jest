@@ -1,0 +1,17 @@
+// Övning 2.2
+// En funktion som returnerar tre gånger input.
+// function triple(x) {}
+
+// let result = triple(2)
+// console.log(result)  // 6
+
+/*
+Först ställer vi upp acceptanskriterier (AK) för funktionen, så att vi vet vad som ska testas.
+
+A1. Om man skickar in ett tal x ska funktionen returnera 3*x
+A2. Annars ska funktionen returnera false
+(möjliga alternativ: null, false, 'sträng med felmeddelande')
+
+Nu skriver vi testfall för varje AK - i utils.test.js
+*/
+
