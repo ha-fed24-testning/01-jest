@@ -29,5 +29,9 @@ function combineWords(a, b) {
 	return a + ', ' + b
 }
 
+function trimma(str) {
+	return false
+}
 
-export { subtract, triple, combineWords }
+
+export { subtract, triple, combineWords, trimma }

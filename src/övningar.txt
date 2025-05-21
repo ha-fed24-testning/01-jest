@@ -26,3 +26,16 @@ A1. om a inte är en sträng, returnera false
 A2. om b inte är en sträng, returnera false
 A3. slå ihop två strängar och returnera resultatet
 */
+
+/*
+Övning 3b
+En funktion som tar bort inledande och avslutande mellanslag från en sträng. Tre exempel på hur den kan användas.
+function trimma(str) {}
+// trimma('abc') === 'abc'
+// trimma('hello!   ') === 'hello!'
+// trimma('  x  ') == 'x'
+
+AK:
+A1. tar bort inledande och avslutande mellanslag från en sträng och returnerar den
+A2. om parametern inte är en sträng, returnera false
+*/

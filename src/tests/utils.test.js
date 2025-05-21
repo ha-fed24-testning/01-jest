@@ -1,4 +1,4 @@
-import { combineWords, subtract, triple } from "../utils.js"
+import { combineWords, subtract, trimma, triple } from "../utils.js"
 
 describe('subtract', () => {
 	// A2 Om x inte är ett tal ska funktionen returnera 'x måste vara ett tal'
@@ -68,6 +68,16 @@ describe('combineWords', () => {
 		const b = -1
 		const expected = false
 		const actual = combineWords(a, b)
+		expect(actual).toBe(expected)
+	})
+})
+
+
+describe('trimma', () => {
+	test('om parametern inte är en sträng, returnera false', () => {
+		const input = 42
+		const expected = false
+		const actual = trimma(input)
 		expect(actual).toBe(expected)
 	})
 })
