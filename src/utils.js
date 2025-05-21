@@ -23,7 +23,7 @@ function triple(x) {
 
 // Övning 2.3a
 function combineWords(a, b) {
-	if( typeof a !== 'string' ) {
+	if( (typeof a !== 'string') || (typeof b !== 'string') ) {
 		return false
 	}
 	return a + ', ' + b
