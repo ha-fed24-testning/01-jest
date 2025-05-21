@@ -15,6 +15,9 @@ function subtract(x, y) {
 
 // Övning 2.2
 function triple(x) {
+	if( typeof x !== 'number' ) {
+		return false
+	}
 	return x * 3
 }
 

@@ -37,4 +37,11 @@ describe('triple', () => {
 		// Assert
 		expect(actual).toBe(expected)
 	})
+
+	test('Annars ska funktionen returnera false', () => {
+		const input = 'hotpink'
+		const expected = false
+		const actual = triple(input)
+		expect(actual).toBe(false)
+	})
 })
