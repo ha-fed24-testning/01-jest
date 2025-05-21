@@ -30,7 +30,10 @@ function combineWords(a, b) {
 }
 
 function trimma(str) {
-	return false
+	if( typeof str !== 'string' ) {
+		return false
+	}
+	return str.trim()
 }
 
 

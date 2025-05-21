@@ -80,4 +80,17 @@ describe('trimma', () => {
 		const actual = trimma(input)
 		expect(actual).toBe(expected)
 	})
+
+	const cases = [
+		// expected, input
+		['abc', 'abc'],
+		['hello!', 'hello!   '],
+		['x', '  x  ']
+
+	]
+
+	test.each(cases)('returnerar %s genom att ta bort inledande och avslutande mellanslag från strängen %s', (expected, input) => {
+		const actual = trimma(input)
+		expect(actual).toBe(expected)
+	})
 })
