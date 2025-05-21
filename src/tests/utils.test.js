@@ -42,6 +42,17 @@ describe('triple', () => {
 		const input = 'hotpink'
 		const expected = false
 		const actual = triple(input)
-		expect(actual).toBe(false)
+		expect(actual).toBe(expected)
+	})
+})
+
+
+describe('combineWords', () => {
+	test('slå ihop två strängar och returnera resultatet', () => {
+		const a = 'cashew'
+		const b = 'bok'
+		const expected = 'cashew, bok'
+		const actual = combineWords(a, b)
+		expect(actual).toBe(expected)
 	})
 })
