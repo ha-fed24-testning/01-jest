@@ -21,4 +21,10 @@ function triple(x) {
 	return x * 3
 }
 
-export { subtract, triple }
+// Övning 2.3a
+function combineWords(a, b) {
+	return a + ', ' + b
+}
+
+
+export { subtract, triple, combineWords }

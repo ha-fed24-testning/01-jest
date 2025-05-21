@@ -1,4 +1,4 @@
-import { subtract, triple } from "../utils.js"
+import { combineWords, subtract, triple } from "../utils.js"
 
 describe('subtract', () => {
 	// A2 Om x inte är ett tal ska funktionen returnera 'x måste vara ett tal'
