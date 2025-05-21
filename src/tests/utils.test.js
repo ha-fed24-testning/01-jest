@@ -55,4 +55,12 @@ describe('combineWords', () => {
 		const actual = combineWords(a, b)
 		expect(actual).toBe(expected)
 	})
+
+	test('om a inte är en sträng, returnera false', () => {
+		const a = [1, 2, 3]
+		const b = 'myra'
+		const expected = false
+		const actual = combineWords(a, b)
+		expect(actual).toBe(expected)
+	})
 })
