@@ -1,4 +1,4 @@
-import { capitalize, combineWords, isItRaining, subtract, trimma, triple } from "../utils.js"
+import { capitalize, combineWords, divide, isItRaining, subtract, trimma, triple } from "../utils.js"
 
 describe('subtract', () => {
 	// A2 Om x inte är ett tal ska funktionen returnera 'x måste vara ett tal'
@@ -163,4 +163,46 @@ describe('isItRaining', () => {
 		expect(actual).toBe(expected)
 	})
 
+})
+
+
+describe('divide', () => {
+	/*
+	5 En funktion som dividerar två tal med varandra. Tips: du kan behöva fånga errors med try/catch. Läs på om toThrow matcher.
+	function divide(x, y) {}   // divide(7, 2) === 3.5
+
+	// 10 / 2 -> 5
+	// 0 / 2 -> 0
+	// 10 / 0 -> Infinity
+	// 0 / 0 -> NaN
+
+	A1. kastar ett fel om x=0 och y=0
+	A2. kastar ett fel om bara y=0
+	A3. returnerar x/y
+	*/
+
+	test('kastar ett fel om bara y=0', () => {
+		const x = 12, y = 0
+
+		expect(() => {
+			divide(x, y)  // ska kasta ett Error
+		}).toThrow('Kan inte dela ett tal med noll!')
+	})
+
+	test('kastar ett fel om x=0 och y=0', () => {
+		const x = 0, y = 0
+
+		expect(() => {
+			divide(x, y)
+		}).toThrow('Båda talen får inte vara noll!')
+	})
+
+	test('returnerar x/y', () => {
+		const x = 77, y = 7
+		const expected = 77 / 7
+
+		const actual = divide(x, y)
+
+		expect(actual).toBe(expected)
+	})
 })

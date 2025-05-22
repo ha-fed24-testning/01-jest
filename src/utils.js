@@ -54,4 +54,16 @@ function isItRaining(moistureLevel) {
 }
 
 
-export { subtract, triple, combineWords, trimma, capitalize, isItRaining }
+// Övning 2.5
+function divide(x, y) {
+	if( x === 0 && y === 0 ) {
+		throw new Error('Båda talen får inte vara noll!')
+	} else if( y === 0 ) {
+		throw new Error('Kan inte dela ett tal med noll!')
+	}
+
+	return x / y
+}
+
+
+export { divide, subtract, triple, combineWords, trimma, capitalize, isItRaining }
