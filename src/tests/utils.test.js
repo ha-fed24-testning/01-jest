@@ -1,4 +1,4 @@
-import { capitalize, combineWords, subtract, trimma, triple } from "../utils.js"
+import { capitalize, combineWords, isItRaining, subtract, trimma, triple } from "../utils.js"
 
 describe('subtract', () => {
 	// A2 Om x inte är ett tal ska funktionen returnera 'x måste vara ett tal'
@@ -131,3 +131,36 @@ describe('capitalize', () => {
 
 })
 
+
+describe('isItRaining', () => {
+	/*
+	4 En funktion som talar om ifall det regnar eller inte. "moistureLevel" ska vara ett tal mellan 0 och 1. Om talet är minst 0.8 ska funktionen räkna det som regn.
+	function isItRaining(moistureLevel) {}
+
+	A1. om moistureLevel >= 0.8 ska funktionen returnera true
+	A2. om moistureLeveL < 0.8 ska funktionen returnera false
+	A3. om moistureLeveL inte är ett tal ska funktionen returnera null
+	*/
+
+	test('om moistureLeveL < 0.8 ska funktionen returnera false', () => {
+		const input = 0.79
+		const expected = false
+		const actual = isItRaining(input)
+		expect(actual).toBe(expected)
+	})
+
+	test('om moistureLevel >= 0.8 ska funktionen returnera true', () => {
+		const input = 0.8
+		const expected = true
+		const actual = isItRaining(input)
+		expect(actual).toBe(expected)
+	})
+
+	test('om moistureLeveL inte är ett tal ska funktionen returnera null', () => {
+		const input = 'anka'
+		const expected = null
+		const actual = isItRaining(input)
+		expect(actual).toBe(expected)
+	})
+
+})

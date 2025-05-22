@@ -45,5 +45,13 @@ function capitalize(text) {
 	return text.toLocaleUpperCase()
 }
 
+// Övning 2.4
+function isItRaining(moistureLevel) {
+	if( typeof moistureLevel !== 'number' ) {
+		return null
+	}
+	return moistureLevel >= 0.8
+}
 
-export { subtract, triple, combineWords, trimma, capitalize }
+
+export { subtract, triple, combineWords, trimma, capitalize, isItRaining }
