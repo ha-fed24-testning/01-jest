@@ -1,4 +1,4 @@
-import { combineWords, subtract, trimma, triple } from "../utils.js"
+import { capitalize, combineWords, subtract, trimma, triple } from "../utils.js"
 
 describe('subtract', () => {
 	// A2 Om x inte är ett tal ska funktionen returnera 'x måste vara ett tal'
@@ -94,3 +94,40 @@ describe('trimma', () => {
 		expect(actual).toBe(expected)
 	})
 })
+
+describe('capitalize', () => {
+	/*
+	3c En funktion som konverterar en sträng till versaler (stora bokstäver).
+	A1. för "" ska funktionen returnera ""
+	A2. för "meet" ska funktionen returnera "MEET"
+	A3. om parametern inte är en sträng ska funktionen returnera false
+	*/
+	test('om parametern inte är en sträng ska funktionen returnera false', () => {
+		// Arrange, act, assert
+		const input = 5
+		const expected = false
+
+		const actual = capitalize(input)
+
+		expect(actual).toBe(expected)
+
+		// Det går att testa direkt också:
+		// expect( capitalize(5) ).toBe( false )
+	})
+
+	test('för "" ska funktionen returnera ""', () => {
+		const input = ''
+		const expected = ''
+		const actual = capitalize(input)
+		expect(actual).toBe(expected)
+	})
+
+	test('för "meet" ska funktionen returnera "MEET"', () => {
+		const input = 'meet'
+		const expected = 'MEET'
+		const actual = capitalize(input)
+		expect(actual).toBe(expected)
+	})
+
+})
+

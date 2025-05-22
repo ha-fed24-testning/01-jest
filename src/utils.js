@@ -29,6 +29,7 @@ function combineWords(a, b) {
 	return a + ', ' + b
 }
 
+// Övning 2.3b
 function trimma(str) {
 	if( typeof str !== 'string' ) {
 		return false
@@ -36,5 +37,13 @@ function trimma(str) {
 	return str.trim()
 }
 
+// Övning 2.3c
+function capitalize(text) {
+	if( typeof text !== 'string' ) {
+		return false
+	}
+	return text.toLocaleUpperCase()
+}
 
-export { subtract, triple, combineWords, trimma }
+
+export { subtract, triple, combineWords, trimma, capitalize }
